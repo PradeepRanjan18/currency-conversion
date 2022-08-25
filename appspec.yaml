@@ -6,5 +6,5 @@ Resources:
         TaskDefinition: "arn:aws:ecs:ap-south-1:230536472264:task-definition/aws-currency-conversion-28:5"
         LoadBalancerInfo:
           ContainerName: "CURRENCY_EXCHANGE_URI"
-          ContainerPort: "8000"
+          ContainerPort: "8100"
         PlatformVersion: "LATEST"
