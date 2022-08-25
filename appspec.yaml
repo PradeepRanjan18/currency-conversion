@@ -1,0 +1,10 @@
+version: 1.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: "arn:aws:ecs:ap-south-1:230536472264:task-definition/aws-currency-conversion-28:5"
+        LoadBalancerInfo:
+          ContainerName: "CURRENCY_EXCHANGE_URI"
+          ContainerPort: "8000"
+        PlatformVersion: "LATEST"
